@@ -4,7 +4,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "io.github.almightysatan.cloudy-server-api"
+group = "io.github.almighty-satan.cloudy-server-api"
 version = "1.0"
 
 java {
