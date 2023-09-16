@@ -43,7 +43,7 @@ public interface Cloudy {
      *
      * @return An immutable {@link Collection} that contains all {@link Server servers}.
      */
-    @NotNull Collection<Server> getServers();
+    @NotNull Collection<@NotNull Server> getServers();
 
     /**
      * Returns an immutable {@link Collection} that contains all {@link Server servers} whose group matches the given {@link UUID}.
@@ -51,7 +51,7 @@ public interface Cloudy {
      *
      * @return An immutable {@link Collection} containing the {@link Server servers}.
      */
-    @NotNull Collection<Server> getServers(@Nullable UUID group);
+    @NotNull Collection<@NotNull Server> getServers(@Nullable UUID group);
 
     /**
      * Returns an immutable {@link Collection} that contains all {@link Server servers} whose group matches the given name.
@@ -59,7 +59,7 @@ public interface Cloudy {
      *
      * @return An immutable {@link Collection} containing the {@link Server servers}.
      */
-    @NotNull Collection<Server> getServers(@Nullable String groupName);
+    @NotNull Collection<@NotNull Server> getServers(@Nullable String groupName);
 
     /**
      * Returns any {@link Server server} whose group matches the given {@link UUID}.
@@ -147,7 +147,7 @@ public interface Cloudy {
      * @throws NullPointerException     If target, reason, operator or durationTimeUnit is {@code null}.
      * @throws IllegalArgumentException If operator is empty or {@code duration <= 0}.
      */
-    void tempmute(@NotNull UUID target, @NotNull String reason, @NotNull String operator, long duration, BanTimeUnit durationTimeUnit);
+    void tempmute(@NotNull UUID target, @NotNull String reason, @NotNull String operator, long duration, @NotNull BanTimeUnit durationTimeUnit);
 
     /**
      * Unmutes bans a player.
