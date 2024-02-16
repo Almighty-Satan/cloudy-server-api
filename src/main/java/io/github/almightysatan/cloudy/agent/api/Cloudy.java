@@ -222,7 +222,7 @@ public interface Cloudy {
     }
 
     /**
-     * Returns an instance of {@link Cloudy}
+     * Returns an instance of {@link Cloudy}.
      *
      * @return an instance of {@link Cloudy}
      */

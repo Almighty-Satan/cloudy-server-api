@@ -29,6 +29,12 @@ public enum BanOperatorType {
         this.hasName = hasName;
     }
 
+    /**
+     * Returns {@code true} if this type of operator has a name. For example players have a name while the console does
+     * not.
+     *
+     * @return {@code true} if this type of operator has a name
+     */
     public boolean hasName() {
         return hasName;
     }

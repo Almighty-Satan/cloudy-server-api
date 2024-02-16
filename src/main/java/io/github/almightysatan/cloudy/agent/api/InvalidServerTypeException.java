@@ -17,7 +17,7 @@
 package io.github.almightysatan.cloudy.agent.api;
 
 /**
- * Thrown if the server type (game-server/proxy) required for calling a certain method does not match the type of this server,
+ * Thrown if the server type (game-server/proxy) required for calling a certain method does not match the type of this server.
  */
 public class InvalidServerTypeException extends RuntimeException {
 }

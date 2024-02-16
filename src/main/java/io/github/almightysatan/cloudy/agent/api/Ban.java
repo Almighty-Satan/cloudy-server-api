@@ -22,42 +22,42 @@ import org.jetbrains.annotations.Nullable;
 public interface Ban {
 
     /**
-     * Returns the type of this ban
+     * Returns the type of this ban.
      *
      * @return Returns the type of this ban
      */
     @NotNull BanType getType();
 
     /**
-     * Returns the duration of this ban
+     * Returns the duration of this ban.
      *
      * @return the duration of this ban
      */
     long getDuration();
 
     /**
-     * Returns the {@link BanTimeUnit} of this bans duration
+     * Returns the {@link BanTimeUnit} of this bans duration.
      *
      * @return the {@link BanTimeUnit} of this bans duration
      */
     @Nullable BanTimeUnit getDurationTimeUnit();
 
     /**
-     * Returns the reason for this ban
+     * Returns the reason for this ban.
      *
      * @return the reason for this ban
      */
     @Nullable String getReason();
 
     /**
-     * Returns the {@link BanOperatorType}
+     * Returns the {@link BanOperatorType}.
      *
      * @return the {@link BanOperatorType}
      */
     @NotNull BanOperatorType getOperatorType();
 
     /**
-     * Returns the name of the operator
+     * Returns the name of the operator.
      *
      * @return the name of the operator (possibly null)
      */

@@ -21,35 +21,36 @@ import org.jetbrains.annotations.NotNull;
 public interface Server {
 
     /**
-     * Returns the internal id of this server
+     * Returns the internal id of this server. This id does never change.
      *
      * @return the id
      */
     int getId();
 
     /**
-     * Returns the name of this server. This is usually {@code groupName-id}
+     * Returns the name of this server. This is usually {@code groupName-id}.
      *
      * @return the name
      */
     @NotNull String getName();
 
     /**
-     * Returns {@code true} if this server is a default/fallback server. Always returns {@code false} if {@link Server#isProxy()} is {@code true}
+     * Returns {@code true} if this server is a default/fallback server. Always returns {@code false} if
+     * {@link Server#isProxy()} is {@code true}.
      *
      * @return {@code true} if this server is a default/fallback server.
      */
     boolean isDefaultServer();
 
     /**
-     * Returns {@code true} if this server is a proxy
+     * Returns {@code true} if this server is a proxy.
      *
      * @return {@code true} if this server is a proxy
      */
     boolean isProxy();
 
     /**
-     * Returns {@code true} if this server is a game-server
+     * Returns {@code true} if this server is a game-server.
      *
      * @return {@code true} if this server is a game-server
      */
@@ -58,35 +59,36 @@ public interface Server {
     }
 
     /**
-     * Returns the ip of this server
+     * Returns the ip of this server.
      *
      * @return the ip
      */
     @NotNull String getIp();
 
     /**
-     * Returns the port of this server
+     * Returns the port of this server.
      *
      * @return the port
      */
     int getPort();
 
     /**
-     * Returns the number of players currently playing on this server
+     * Returns the number of players currently playing on this server.
      *
      * @return the number of players
      */
     int getPlayers();
 
     /**
-     * Returns the number of slots of this server
+     * Returns the number of slots of this server.
      *
      * @return the number of slots
      */
     int getMaxPlayers();
 
     /**
-     * Returns {@code true} if this server is in game. Should always return {@code false} if {@link Server#isProxy()} is {@code true}
+     * Returns {@code true} if this server is in game. This always returns {@code false} if {@link Server#isProxy()} is
+     * {@code true}.
      *
      * @return {@code true} if this server is in game
      */
