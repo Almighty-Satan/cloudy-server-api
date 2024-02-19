@@ -97,11 +97,11 @@ public interface Cloudy {
      * @param reason           The reason
      * @param operator         The name of the operator
      * @param duration         The duration
-     * @param durationTimeUnit The {@link BanTimeUnit} of the duration
+     * @param durationTimeUnit The {@link TimeMeasure} of the duration
      * @throws NullPointerException     If target, reason, operator or durationTimeUnit is {@code null}.
      * @throws IllegalArgumentException If operator is empty or {@code duration <= 0}.
      */
-    void tempban(@NotNull UUID target, @NotNull String reason, @NotNull String operator, long duration, @NotNull BanTimeUnit durationTimeUnit);
+    void tempban(@NotNull UUID target, @NotNull String reason, @NotNull String operator, long duration, @NotNull TimeMeasure durationTimeUnit);
 
     /**
      * Unbans a player.
@@ -143,11 +143,11 @@ public interface Cloudy {
      * @param reason           The reason
      * @param operator         The name of the operator
      * @param duration         The duration
-     * @param durationTimeUnit The {@link BanTimeUnit} of the duration
+     * @param durationTimeUnit The {@link TimeMeasure} of the duration
      * @throws NullPointerException     If target, reason, operator or durationTimeUnit is {@code null}.
      * @throws IllegalArgumentException If operator is empty or {@code duration <= 0}.
      */
-    void tempmute(@NotNull UUID target, @NotNull String reason, @NotNull String operator, long duration, @NotNull BanTimeUnit durationTimeUnit);
+    void tempmute(@NotNull UUID target, @NotNull String reason, @NotNull String operator, long duration, @NotNull TimeMeasure durationTimeUnit);
 
     /**
      * Unmutes bans a player.

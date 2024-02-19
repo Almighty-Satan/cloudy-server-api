@@ -16,7 +16,7 @@
 
 package io.github.almightysatan.cloudy.agent.api;
 
-public enum BanTimeUnit {
+public enum TimeMeasure {
 
     SECONDS(1000L),
     MINUTES(SECONDS.multiplier * 60L),
@@ -25,7 +25,7 @@ public enum BanTimeUnit {
 
     private final long multiplier;
 
-    BanTimeUnit(long multiplier) {
+    TimeMeasure(long multiplier) {
         this.multiplier = multiplier;
     }
 

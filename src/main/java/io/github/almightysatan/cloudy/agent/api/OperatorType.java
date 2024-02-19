@@ -16,7 +16,7 @@
 
 package io.github.almightysatan.cloudy.agent.api;
 
-public enum BanOperatorType {
+public enum OperatorType {
 
     PANEL(true),
     CONSOLE(false),
@@ -25,7 +25,7 @@ public enum BanOperatorType {
 
     private final boolean hasName;
 
-    BanOperatorType(boolean hasName) {
+    OperatorType(boolean hasName) {
         this.hasName = hasName;
     }
 

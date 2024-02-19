@@ -36,11 +36,11 @@ public interface Ban {
     long getDuration();
 
     /**
-     * Returns the {@link BanTimeUnit} of this bans duration.
+     * Returns the {@link TimeMeasure} of this bans duration.
      *
-     * @return the {@link BanTimeUnit} of this bans duration
+     * @return the {@link TimeMeasure} of this bans duration
      */
-    @Nullable BanTimeUnit getDurationTimeUnit();
+    @Nullable TimeMeasure getDurationTimeUnit();
 
     /**
      * Returns the reason for this ban.
@@ -50,11 +50,11 @@ public interface Ban {
     @Nullable String getReason();
 
     /**
-     * Returns the {@link BanOperatorType}.
+     * Returns the {@link OperatorType}.
      *
-     * @return the {@link BanOperatorType}
+     * @return the {@link OperatorType}
      */
-    @NotNull BanOperatorType getOperatorType();
+    @NotNull OperatorType getOperatorType();
 
     /**
      * Returns the name of the operator.
